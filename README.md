@@ -13,6 +13,10 @@ TBC
 - USB A to micro B Cable
 - High Speed 4K UHD HDMI Lead, Male to Micro D Male
 
+## Software Dependencies
+- OpenMV IDE 2.6.9
+- OpenMV Firmware 4.0.2
+
 ## OpenMV Download and Setup
 1. Download OpenMV IDE: https://openmv.io/pages/download
 2. Install the OpenMV IDE on you system (Windows/Mac/Linux): https://docs.openmv.io/openmvcam/tutorial/software_setup.html#
