@@ -33,12 +33,18 @@ IMPORTANT: Ensure that you select the correct SD card as this process will overw
 11. Select 'Allow public-key authentication only'.
 NOTE: You can select 'Use password authentication' and provide a password. However, this is not recommended for devices connected directly to the internet or on public networks as they will be vulnerable to brute force password hacking attacks.
 12. If the device is to connect to the internet via wifi, check 'Configure wifi' and provide the SSID and password for the network the device is intended to connect to. Also set the wifi country from the dropdown e.g. 'GB'.
-13. Optionally set locale settings for timezone (e.g. Europe/London) and keyboard layout (e.g. 'gb').
-14. Uncheck each of the 'Persistent settings' options.
-15. Click 'Save'.
-16. Click 'Write'.
-17. Disconect the Micro SD card.
-18. Place the Micro SD card in the Raspberry Pi and switch on the device.
+13. Check 'Set locale settings' and select timezone (e.g. Europe/London) and keyboard layout (e.g. 'gb').
+14. Check 'Skip first-run wizard'.
+IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be disabled successfully start the Raspberry Pi in headless mode.
+16. Uncheck each of the 'Persistent settings' options.
+17. Click 'Save'.
+18. Click 'Write'.
+19. Disconect the Micro SD card.
+20. Place the Micro SD card in the Raspberry Pi and switch on the device.
+21. Wait 5 minutes for the device to start and connect to the network.
+
+## Login to the Raspberry Pi using Putty
+1. Login to the device using the Putty SSH client: https://www.putty.org/
 
 ## OpenMV Download and Setup
 1. Download OpenMV IDE: https://openmv.io/pages/download
