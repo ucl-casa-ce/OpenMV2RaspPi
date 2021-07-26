@@ -57,16 +57,20 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 19. Disconect the Micro SD card.
 20. Place the Micro SD card in the Raspberry Pi and switch on the device.
 21. Wait 5 minutes for the device to start up and connect to the network.
-22. You can connect to the Raspberry Pi and login.
+22. You can now connect to the Raspberry Pi and login.
 
 ## Connecting to the Raspberry Pi using your Private Key with PUTTY
 1. Open PUTTY on your computer.
 2. Set the 'Connection type' to 'SSH'.
 3. Set the 'Port' value to '22'. 
 4. Enter the hostname for your Raspberry Pi device. If your computer is on the same local network as the device you can use the device name or SSID chosen in Raspberry Pi Imager. Otherwise you should use the numberic IP address.
-5. Click on 'Auth' in the Category list on the left of the UI
-6. Click 'Browse', navigate to the location where you stored the private key with PUTTYgen, then select that ket gor authentication.
+5. Select 'Connection' > 'SSH' > 'Auth' in the Category list on the left of the PUTTYgen UI.
+6. Click 'Browse', navigate to the location where you stored the private key from PUTTYgen, and select the private key (.ppk file) for authentication.
 7. Click the 'Open' button to start the connection.
+8. If the PUTTY Security Alert popup appears click 'Accept'.
+9. Enter 'pi' as the login.
+10. Enter the passphrase you chose when generating the private key in PUTTYgen.
+11. You are now remotely logged into the Raspberry Pi.
 
 ## OpenMV Download and Setup
 1. Download OpenMV IDE: https://openmv.io/pages/download
