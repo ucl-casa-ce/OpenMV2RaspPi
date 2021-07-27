@@ -18,7 +18,7 @@ You will need a separate computer or laptop to configure the components and load
 ## Software Dependencies
 - OpenMV IDE 2.6.9
 - OpenMV Firmware 4.0.2
-- OpenMV RPC Python Module
+- OpenMV RPC Python Module (compatible with Python 2 and 3)
 
 # Installation
 
@@ -78,4 +78,7 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 2. Install the OpenMV IDE on you system (Windows/Mac/Linux): https://docs.openmv.io/openmvcam/tutorial/software_setup.html#
 3. Setup the OpenMV hardware: https://docs.openmv.io/openmvcam/tutorial/hardware_setup.html
 4. Connect the IDE to the camera: https://docs.openmv.io/openmvcam/tutorial/openmvide_overview.html#connecting-to-your-openmv-cam
-5. Add Python script to the IDE.
+5. Tranfer script `main.py` to the OpenMV device.
+
+## ------------ In Progress ------------
+- Copy `RPC.py` to Raspberry Pi device from the following location on GitHub: https://github.com/openmv/openmv/blob/master/tools/rpc/rpc.py 
