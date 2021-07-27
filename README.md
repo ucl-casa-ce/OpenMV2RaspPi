@@ -81,4 +81,4 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 5. Tranfer script `main.py` to the OpenMV device.
 
 ## ------------ In Progress ------------
-- Copy `RPC.py` to Raspberry Pi device from the following location on GitHub: https://github.com/openmv/openmv/blob/master/tools/rpc/rpc.py 
+- Copy `rpc.py` to Raspberry Pi device from the following location on GitHub: https://github.com/openmv/openmv/blob/master/tools/rpc/rpc.py 
