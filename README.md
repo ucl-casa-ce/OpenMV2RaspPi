@@ -18,7 +18,7 @@ You will need a separate computer or laptop to configure the components and load
 ## Software Dependencies
 - OpenMV IDE 2.6.9
 - OpenMV Firmware 4.0.2
-- RPC Python Module
+- OpenMV RPC Python Module
 
 # Installation
 
