@@ -73,7 +73,10 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 21. Wait 5 minutes for the device to start up and connect to the network.
 22. You can now connect to the Raspberry Pi and login.
 
-## Connecting to the Raspberry Pi using your Private Key with PUTTY
+## Connecting to the Raspberry Pi over SSH using your Private Key with PUTTY
+
+You can connect to the Raspberry Pi with SSH via WiFi or an physical Ethernet connection. If you are on the same network you can access the device using the SSID you gave it when setting up the device. If you intend to access the device remotely via the internet you will need to assign the device a static private IP address and fixed public address. That goes beyond the scope of this guide. 
+
 1. Open PUTTY on your computer (Windows).
 2. Set the 'Connection type' to 'SSH'.
 3. Set the 'Port' value to '22'. 
@@ -85,6 +88,7 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 9. Enter 'pi' as the login.
 10. Enter the passphrase you chose when generating the private key in PUTTYgen.
 11. You are now remotely logged into the Raspberry Pi.
+12. You can check the device's private IP address by typing `ipconfig`. The 'inet' numbers listed against 'wlan0' and/or 'eth0' interfaces are the IP addresses for the first available wifi and ethernet connections for the device.
 
 ## OpenMV Download and Setup
 1. Download OpenMV IDE (Windows/Mac/Linux): https://openmv.io/pages/download
