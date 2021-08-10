@@ -22,9 +22,11 @@ You will need a separate computer or laptop to configure the components and load
 
 # Installation
 
-## Generate Public and Private SSH Keys for the Raspberry Pi
-1. Download the PUTTY SSH client (includes PUTTYgen): https://www.putty.org/
-2. Open the PUTTYgen application.
+The following guide assumes the use of a Windows PC for downloading and configuring the OpenMV camera and Raspberry Pi. This process will differ if you are using an Apple Mac or Linux computer.  
+
+## Generate Public and Private SSH Keys on your computer for communicating with the Raspberry Pi
+1. Download the PUTTY SSH client (Windows): https://www.putty.org/
+2. Open the associated PUTTYgen application.
 3. Click the 'Generate' button to create private and public keys for your Raspberry Pi device.
 4. Move your mouse in the box provided by the application to generate random data.
 5. Set a name for the SSH key e.g. 'OpenMV2RaspPi' so you remember what key is required when connecting to the device in future.
@@ -72,7 +74,7 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 22. You can now connect to the Raspberry Pi and login.
 
 ## Connecting to the Raspberry Pi using your Private Key with PUTTY
-1. Open PUTTY on your computer.
+1. Open PUTTY on your computer (Windows).
 2. Set the 'Connection type' to 'SSH'.
 3. Set the 'Port' value to '22'. 
 4. Enter the hostname for your Raspberry Pi device. If your computer is on the same local network as the device you can use the device name or SSID chosen in Raspberry Pi Imager. Otherwise you should use the numberic IP address.
@@ -85,8 +87,8 @@ IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be d
 11. You are now remotely logged into the Raspberry Pi.
 
 ## OpenMV Download and Setup
-1. Download OpenMV IDE: https://openmv.io/pages/download
-2. Install the OpenMV IDE on you system (Windows/Mac/Linux): https://docs.openmv.io/openmvcam/tutorial/software_setup.html#
+1. Download OpenMV IDE (Windows/Mac/Linux): https://openmv.io/pages/download
+2. Install the OpenMV IDE on you system: https://docs.openmv.io/openmvcam/tutorial/software_setup.html#
 3. Setup the OpenMV hardware: https://docs.openmv.io/openmvcam/tutorial/hardware_setup.html
 4. Connect the IDE to the camera: https://docs.openmv.io/openmvcam/tutorial/openmvide_overview.html#connecting-to-your-openmv-cam
 5. Tranfer script `main.py` to the OpenMV device.
