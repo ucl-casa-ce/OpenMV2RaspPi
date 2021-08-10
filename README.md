@@ -40,18 +40,26 @@ You will need a separate computer or laptop to configure the components and load
 4. Select 'Raspberry Pi OS Lite (32-bit)'.
 5. Insert the Micro SD card into your computer.
 6. Click 'Choose SD Card'.
+
 IMPORTANT: Ensure that you select the correct SD card as this process will overwrite the data on the drive you select.
+
 8. Open the hidden 'Advanced options' section by pressing CTRL+SHIFT+X on the keyboard.
 9. Check 'Set hostname' option and provide name e.g. `raspberrypi`. This will be the device's wireless network name or SSID.
 10. Check 'Enable SSH' to allow remote access to the device.
 11. Select 'Allow public-key authentication only'.
+
 NOTE: You can select 'Use password authentication' and provide a password instead. However, this is not recommended for devices connected directly to the internet or on public networks as they will be vulnerable to brute force password hacking attacks.
+
 12. Paste the public key generated with PUTTYgen into the field 'Set authorized_keys...'.
+
 IMPORTANT: Ensure you remove and overwrite the default value. If you don't place the public key into this field correctly you will not be able to log in to the Raspberry Pi using the corresponding private key.
+
 13. If the device is to connect to the internet via wifi, check 'Configure wifi' and provide the SSID and password for the network the device is intended to connect to. Also set the wifi country from the dropdown e.g. 'GB'.
 14. Check 'Set locale settings' and select timezone (e.g. Europe/London) and keyboard layout (e.g. 'gb').
 15. Check 'Skip first-run wizard'.
-IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be disabled successfully start the Raspberry Pi in headless mode.
+
+IMPORTANT: The first-run wizard requires monitor, keyboard an mouse so must be disabled to successfully start the Raspberry Pi in headless mode.
+
 16. Uncheck each of the 'Persistent settings' options.
 17. Click 'Save'.
 18. Click 'Write'.
