@@ -45,6 +45,9 @@ IMPORTANT: Ensure that you select the correct SD card as this process will overw
 
 8. Open the hidden 'Advanced options' section by pressing CTRL+SHIFT+X on the keyboard.
 9. Check 'Set hostname' option and provide name e.g. `raspberrypi`. This will be the device's wireless network name or SSID.
+
+NOTE: Choosing a unique SSID for the device can be useful for allowing you to access the it from another machine on the same local network. This can help you connect to the device via SSH before you have established what IP address it has been assigned on that network. 
+
 10. Check 'Enable SSH' to allow remote access to the device.
 11. Select 'Allow public-key authentication only'.
 
