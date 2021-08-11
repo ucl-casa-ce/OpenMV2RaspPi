@@ -96,6 +96,27 @@ You can connect to the Raspberry Pi with SSH via WiFi or an physical Ethernet co
 11. You are now remotely logged into the Raspberry Pi.
 12. You can check the device's private IP address by typing `ipconfig`. The 'inet' numbers listed against 'wlan0' and/or 'eth0' interfaces are the IP addresses for the first available wifi and ethernet connections for the device.
 
+## Install Python Dependencies on Raspberry Pi
+1. Login to the Raspberry Pi over SSH.
+2. Install pip package manager: `sudo apt-get install python-pip`.
+3. Install Pyserial: `pip install pyserial`.
+4. Install Pygame: `pip install pygame`.
+
+## Transferring project files to the Raspberry Pi with WinSCP
+1. Download WinSCP (Windows): https://winscp.net/
+2. Open the application
+3. Set the 'File Protocol' to 'SFTP'. 
+4. Enter the hostname for your Raspberry Pi device (SSID or IP address).
+5. Set 'Port Number' as '22'.
+6. Click 'Advanced' button.
+7. Select 'SSH' > 'Autentication'.
+8. Click on the breadcrumbs '...' next to the text box 'Private key file' and navigate to the location where you stored the private key from PUTTYgen. Select the private key (.ppk file) for authentication.
+9. Click 'Ok'.
+10. Click 'Login'.
+11. Enter username 'pi' followed by the passphrase associated with the private key (same as with SSH login via PUTTY above).
+12. You now have remote access to the file system on the Raspberry Pi. Files can be dragged and dropped onto the device.
+13. Copy the files from this repos RaspberryPi folder onto the device.
+
 ## OpenMV Download and Setup
 1. Download OpenMV IDE (Windows/Mac/Linux): https://openmv.io/pages/download
 2. Install the OpenMV IDE on you system: https://docs.openmv.io/openmvcam/tutorial/software_setup.html#
