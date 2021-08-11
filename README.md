@@ -18,7 +18,13 @@ You will need a separate computer or laptop to configure the components and load
 ## Software Dependencies
 - OpenMV IDE 2.6.9
 - OpenMV Firmware 4.0.2
-- OpenMV RPC Python Module (compatible with Python 2 and 3)
+- OpenMV RPC Python Module (Compatible with Python 2 and 3. For convenience this script is included within this project under MIT licence)
+
+A number of other Python modules are required for the project. 
+- Pyserial
+- Pygame
+
+These modules are installed using the provided script `setup.sh`. Further instructions below.
 
 # Installation
 
