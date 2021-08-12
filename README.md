@@ -124,5 +124,13 @@ You can connect to the Raspberry Pi with SSH via WiFi or an physical Ethernet co
 4. Connect the IDE to the camera: https://docs.openmv.io/openmvcam/tutorial/openmvide_overview.html#connecting-to-your-openmv-cam
 5. Tranfer script `main.py` to the OpenMV device.
 
-## ------------ In Progress ------------
-- Copy `rpc.py` to Raspberry Pi device from the following location on GitHub: https://github.com/openmv/openmv/blob/master/tools/rpc/rpc.py 
+## Troubleshooting
+
+#### The OpenMV camera is showing a flashing white light or 'panicking'
+1. Start the OpenMVIDE. 
+2. Press connect when the camera is not attached.
+3. Follow the onscreen prompts. When the popup says 'Do you have an OpenMV Cam connected and is it bricked?' click 'Yes'. Ensure to select the correct camera model when prompted. If you have your data backed up you can erase the devices file system.
+4. Connect or disconnect and reconnect the device when prompted.
+5. The OpenMV IDE will now clear the camera's flash memory and load the lastest firmware version available.
+6. The device is now ready for use.
+ 
