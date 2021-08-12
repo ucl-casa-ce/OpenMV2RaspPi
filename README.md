@@ -122,7 +122,14 @@ You can connect to the Raspberry Pi with SSH via WiFi or an physical Ethernet co
 2. Install the OpenMV IDE on you system: https://docs.openmv.io/openmvcam/tutorial/software_setup.html#
 3. Setup the OpenMV hardware: https://docs.openmv.io/openmvcam/tutorial/hardware_setup.html
 4. Connect the IDE to the camera: https://docs.openmv.io/openmvcam/tutorial/openmvide_overview.html#connecting-to-your-openmv-cam
-5. Tranfer script `main.py` to the OpenMV device.
+5. Open the script `rpc_remote.py` in the OpenMV IDE.
+6. Copy the script to the camera device as `main.py` by clicking the following: 'Tools' > 'Save open script to OpenMV Cam (as main.py)'. Alternatively you can manually rename the file and copy it onto the device flash drive.
+
+# Development and Testing
+
+## Observations
+1. As you cannot use USB VCP while the OpenMV IDE device is connected, debugging issues on the remote device can be difficult.
+2. Iteration can be hindered by the device going into 'panic' mode when reconnecting the IDE to deploy code updates. Doing so requires the developer to go through the device unbricking process (see Troubleshooting below).
 
 ## Troubleshooting
 
