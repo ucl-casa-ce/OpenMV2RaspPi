@@ -31,7 +31,13 @@ def exe_person_detection():
     if result is not None:
         print(result.tobytes())
 
+def exe_face_counter():
+    result = interface.call("face_counter")
+    if result is not None:
+        print(result.tobytes())
+
 # Execute remote functions in a loop.
 while(True):
-    exe_face_detection() # Face should be about 2ft away.
-    # exe_person_detection()
+    #exe_face_detection() # Face should be about 2ft away.
+    #exe_person_detection()
+    exe_face_counter()
