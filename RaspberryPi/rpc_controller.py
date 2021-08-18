@@ -45,5 +45,5 @@ def exe_people_counter():
 while(True):
     #exe_face_detection() # Face should be about 2ft away.
     #exe_person_detection()
-    #exe_face_counter()
-    exe_people_counter()
+    exe_face_counter()
+    #exe_people_counter()
