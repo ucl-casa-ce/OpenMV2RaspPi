@@ -51,10 +51,19 @@ def face_counter(data):
     if not faces: return bytes() # No detections.
     return str(len(faces)).encode()
 
+# Function returns count of people
+def people_counter(data):
+    sensor.set_pixformat(sensor.RGB565)
+    sensor.set_framesize(sensor.QVGA)
+    people = tf.classify("person_detection", sensor.snapshot()).output()
+    #if not people: return bytes() # No detections.
+    return str(len(people)).encode()
+
 # Register call backs.
 interface.register_callback(face_detection)
 interface.register_callback(person_detection)
 interface.register_callback(face_counter)
+interface.register_callback(people_counter)
 
 # Start processing remote events. Interface.loop() does not return.
 interface.loop()
